@@ -1,0 +1,1646 @@
+/**
+Hasty Pudding Institute Styles
+
+Design Colors:
+Top Black: #252525;
+Header Red: #8a1c2c, light - #a62235, dark - #70111f, footer-red: c11732;
+blue: #004279;
+h1 #990d23;
+-------------------------------------------------------------
+org colors:
+Institute       Club            Theatricals   Kroks
+purple:#581015; yellow:#ebb700; blue:#004986; green:#006643;
+-------------------------------------------------------------
+
+**/
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,800);
+/*font-family: 'Open Sans', sans-serif; */
+@font-face {
+    font-family: 'NewsGothicStdMedium';
+    src: url('news_gothic/NewsGothicStd/newsgothicstd.eot');
+    src: url('news_gothic/NewsGothicStd/newsgothicstd.eot') format('embedded-opentype'),  url('news_gothic/NewsGothicStd/newsgothicstd.woff') format('woff'),  url('news_gothic/NewsGothicStd/newsgothicstd.ttf') format('truetype'),  url('news_gothic/NewsGothicStd/newsgothicstd.svg#NewsGothicStdMedium') format('svg');
+}
+@font-face {
+    font-family: 'NewsGothicStdBold';
+    src: url('news_gothic/NewsGothicStd-Bold/newsgothicstd-bold.eot');
+    src: url('news_gothic/NewsGothicStd-Bold/newsgothicstd-bold.eot') format('embedded-opentype'),  url('news_gothic/NewsGothicStd-Bold/newsgothicstd-bold.woff') format('woff'),  url('news_gothic/NewsGothicStd-Bold/newsgothicstd-bold.ttf') format('truetype'),  url('news_gothic/NewsGothicStd-Bold/newsgothicstd-bold.svg#NewsGothicStdBold') format('svg');
+}
+body {
+    background:url(http://hastypudding.org/assets/images/bg/bg_w.jpg) center center repeat;
+    color:#121212;
+    font-family: 'Open Sans', sans-serif;
+    position:relative;
+}
+/* Caligraphy
+=========================================================== */
+h1, h2, h3, h4 {
+    color:#990d23;
+    text-transform:uppercase;
+    font-family: 'NewsGothicStdBold';
+}
+h1 {
+    font-size:26px;
+    margin:0 auto 1.5em;
+}
+
+h1.page-heading {
+   font-size: 55px;
+   margin: 55px auto;
+   text-align: center;
+   text-transform: uppercase;
+   font-family: 'NewsGothicStdMedium';
+}
+h2 {
+    font-size:28px;
+    margin-bottom: 40px;
+}
+h3 {
+    font-size:18px;
+}
+h4 {
+    font-size:14px;
+}
+.menu-frame h3 {
+    color:#fff;
+}
+.center {
+    text-align:center;
+}
+.align-left {
+    text-align:left;
+}
+.align-right {
+    float:right
+}
+h3.bg-line {
+    margin: 35px 0 15px;
+text-align: center;
+font-size: 16px;
+}
+h3.bg-line span {
+    background:#FBFAE8;
+    padding:0 8px;
+}
+h3.reg {
+    line-height: 1.5em;
+    margin:2em 0 1em;
+}
+.bg-line  {
+    background: url(http://hastypudding.org/assets/images/bg_h3_lines.png) right center repeat-x;
+}
+hr.sep {
+    border:none;
+    background:url(http://hastypudding.org/assets/images/bg/sep.png) center center no-repeat;
+    width:100%;
+    height:15px;
+    margin:0 0 25px;
+
+    padding:0;
+}
+hr.sep.hpt-l {
+    height: 50px;
+    margin:25px 0;
+}
+.affix {
+    width: inherit;
+    //helped keep the content the same size on fluid layouts  position: fixed;
+    top: 50px;
+    //height of the nav
+}
+.affix-bottom {
+    width: inherit;
+    position: absolute;
+    top: auto;
+}
+.affix-top {
+    //i didnt need this style but you might
+}
+
+/* Tiles
+========================================================== */
+.tile {
+    margin:8px 0 0;
+    display: block;
+    padding:25px;
+}
+.tile p{
+    margin-bottom: 0;
+}
+#one.tile, #two.tile, #three.tile {
+    min-height: 265px;
+}
+#one {
+    background:url(http://hastypudding.org/assets/images/donate.jpg) center center no-repeat;
+}
+#one .btn {
+    margin-top:68px;
+    margin-bottom: 0;
+}
+#two {
+    background:url(http://hastypudding.org/assets/images/apply.jpg) center center no-repeat;
+}
+#two .btn {
+    margin-top:41px;
+    margin-bottom: 0;
+}
+#three {
+    background:url(http://hastypudding.org/assets/images/subscribe.jpg) center center no-repeat;
+}
+#three .btn {
+    margin-top:9px;
+    margin-bottom: 0;
+}
+/* Buttons
+========================================================== */
+.btn {
+    -moz-user-select: none;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 8px 22px;
+    text-transform: uppercase;
+}
+.btn-full {
+    width:100%;
+}
+.btn-yellow {
+    color: #ffffff;
+    background-color: #f1c119;
+    border-color: #e0af01;
+    text-shadow: 0px 1px 0px #6e5602;
+    -moz-text-shadow: 0px 1px 0px #6e5602;
+    -webkit-text-shadow: 0px 1px 0px #6e5602;
+}
+.btn-yellow:hover, .btn-yellow:focus, .btn-yellow:active, .btn-yellow.active, .open .dropdown-toggle.btn-yellow {
+    color: #ffffff;
+    background-color: #e0af01;
+    border-color: #e0af01;
+}
+.btn-yellow:active, .btn-yellow.active, .open .dropdown-toggle.btn-yellow {
+    background-image: none;
+}
+.btn-purple, .btn-submit {
+    color: #ffffff;
+    background-color: #9f0f25;
+    border-color: #581015;
+    text-shadow: 0px 1px 0px #42010b;
+    -moz-text-shadow: 0px 1px 0px #42010b;
+    -webkit-text-shadow: 0px 1px 0px #42010b;
+}
+.btn-purple:hover, .btn-submit:hover, .btn-purple:focus, .btn-purple:active, .btn-yellow.active, .open .dropdown-toggle.btn-purple {
+    color: #ffffff;
+    background-color: #8A1C2C;
+    border-color: #581015;
+}
+.btn-purple:active, .btn-submit:active, .btn-purple.active, .open .dropdown-toggle.btn-purple {
+    background-image: none;
+}
+.btn-blue, .hpt .btn-submit, .hpc .btn-submit {
+    color: #ffffff;
+    background-color: #004986;
+    border-color: #142533;
+}
+.btn-blue:hover, .btn-blue:focus, .btn-blue:active, .btn-blue.active, .open .dropdown-toggle.btn-blue, .hpt .btn-submit:hover, .hpt .btn-submit:focus,
+.hpt .btn-submit:active, .hpc .btn-submit:hover, .hpc .btn-submit:focus, .hpc .btn-submit:active{
+    color: #ffffff;
+    background-color: #013c6e;
+    border-color: #142533;
+}
+.btn-blue:active, .btn-blue.active, .open .dropdown-toggle.btn-blue {
+    background-image: none;
+}
+
+
+/* Top Header Styles
+=========================================================== */
+.header-top-wrapper {
+    width:100%;
+    height:auto;
+    background:#252525;
+    padding:0;
+}
+.logo {
+    padding:3px 0;
+}
+.logo a {
+    border:none;
+}
+.logo a:hover {
+    opacity:.8;
+}
+/* Social Media icons at the top **/
+ul.social-t {
+    margin:0;
+    padding:0;
+    float:right;
+    border-left:1px solid #1e1e1e;
+    border-right:1px solid #333;
+}
+ul.social-t li {
+    line-height:53px;
+    float:left;
+    display:block;
+    margin:0;
+    padding:0 10px;
+    border-left:1px solid #333;
+    border-right:1px solid #1e1e1e;
+}
+ul.social-t li:first-child {
+    border-left:1px solid #333;
+}
+ul.social-t li:last-child {
+    border-right:1px solid #1e1e1e;
+}
+ul.social-t li a {
+    border:none;
+    padding:12px 10px 8px;
+    color:#fff;
+    font-family: 'NewsGothicStdMedium';
+    line-height:1em;
+}
+ul.social-t li a:hover {
+    opacity:.7;
+    text-decoration:none;
+}
+ul.social-t li a img {
+}
+ul.social-t li.social {
+    // background:url(http://hastypudding.org/assets/images/arrow-down.png) 90px center no-repeat;
+}
+/* social sub menu */
+
+ul.social-t ul {
+    margin:10px 0 -10px;
+}
+ul.social-t ul a {
+    margin:0px;
+    font-size:12px;
+    font-size:1.2rem;
+    text-align:center;
+    padding:10px;
+}
+ul.social-t ul li {
+    border:none !important;
+    line-height: 53px;
+}
+
+.is-active {
+    display:block;
+}
+.social .is-active {
+    opacity:1;
+    display:block;
+}
+/* ************************* */
+/* Main Top Navigation
+======================================================= */
+.navbar-wrapper {
+    background:#8a1c2c url(http://hastypudding.org/assets/images/hpi-logo.png) center 5px no-repeat;
+    width:100%;
+    padding:145px 0 0px;
+    border-top:1px solid #a62235;
+    border-bottom:1px solid #70111f;
+}
+.navbar-wrap {
+    border-top:1px solid #8a1c2c;
+    border-bottom:2px solid #8a1c2c;
+    position:relative;
+    z-index:100;
+}
+/* Banner Caurosel
+======================================================= */
+h2#slide-1 {
+    color:#fff;
+    font-size:36px;
+}
+.txt-xs, .txt-sm, .txt-md, .txt-lg {
+    font-family: 'NewsGothicStdBold';
+    color:#fff !important;
+    text-shadow: 0 3px 0 #333;
+    text-transform:uppercase;
+    line-height:1em;
+}
+.txt-xs {
+    font-size:16px;
+    text-transform:none;
+    font-family: 'NewsGothicStdMedium';
+}
+.txt-sm {
+    font-size: 30px;
+}
+.txt-md {
+    font-size:50px;
+}
+.txt-lg {
+    font-size:60px;
+}
+.txt-xlg {
+    font-size: 80px;
+}
+h2.txt-lg {
+    line-height:80px;
+    margin:0 auto;
+}
+.carousel-text {
+    font-family: 'NewsGothicStdBold';
+    color:#fff !important;
+    text-shadow: 0 3px 0 #333;
+    text-transform:uppercase;
+    line-height:1em;
+
+}
+h2.carousel-text {
+    margin:0;
+}
+.rsContent .social-icons-wrap {
+    margin:5px auto;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    align-self:center;
+}
+/* HP Organizations
+======================================================== */
+.hp-org-wrap {
+    margin:0 auto;
+    padding:0;
+    width:100%;
+}
+.hp-org-wrap:hover {
+    background:#fcf9dc;
+}
+.hp-org-wrap img {
+    box-shadow:0px 8px 5px -5px #333;
+    -moz-box-shadow:0px 8px 5px -5px #333;
+    -webkit-box-shadow:0px 8px 5px -5px #333;
+}
+.org_wrp {
+    background:url(http://hastypudding.org/assets/images/ln_f_h.png) top right repeat-y;
+    border-bottom:10px solid #ede8c5;
+    min-height:475px;
+    opacity:.8;
+}
+.org_wrp:hover {
+    opacity:1;
+}
+.org_wrp a {
+    color:#121212;
+}
+.org_wrp a:hover {
+    text-decoration:none;
+}
+#institute-tab:hover {
+    background-color:#fbf7e7;
+    border-bottom:10px solid #581015;
+}
+#club-tab:hover {
+    background-color:#fbf7e7;
+    border-bottom:10px solid #ebb700;
+}
+#theatricals-tab:hover {
+    background-color:#fbf7e7;
+    border-bottom:10px solid #004986;
+}
+#kroks-tab {
+    background-image:none;
+}
+#kroks-tab:hover {
+    background-color:#fbf7e7 !important;
+    border-bottom:10px solid #006643;
+}
+.org_wrp:hover {
+    border-bottom:10px solid #581015;
+}
+.org_wrp p.st_height {
+    min-height:200px;
+}
+.read-more {
+    float:right;
+}
+/* Main Body
+======================================================== */
+.main-wrap {
+    width:100%;
+    margin:50px auto 0;
+    padding:50px 0;
+    background:url(http://hastypudding.org/assets/images/bg/bg_ch.jpg) center center repeat;
+}
+/* Left Menu
+======================================================== */
+
+#stickybox {
+    width:186px;
+    height:485px;
+}
+#left-sidebar {
+
+}
+
+.back-to-top a {
+    color: #fff;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 2em;
+    right: 0px;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgba(30, 30, 30, 0.80);
+    font-size: 12px;
+    padding: 1em;
+    display: none;
+}
+
+.back-to-top:hover {
+    background-color: rgba(135, 135, 135, 0.50);
+}
+.back-to-top a:hover {
+    color: #fff;
+}
+#scroll-down {
+    background:url(http://hastypudding.org/assets/images/scroll-down.png) center center no-repeat;
+    width: 81px;
+    height: 81px;
+    margin-top:-33px;
+    margin-bottom:-33px;
+    display: block;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+    z-index: 99;
+}
+
+.left-col-wrap {
+    float:left;
+    width:186px;
+    margin:0 10px 0 0;
+    padding:5px;
+    background:#fff;
+    position:relative;
+    box-shadow:0 0 3px #BAB598;
+    -moz-box-shadow:0 0 3px #BAB598;
+    -webkit-box-shadow:0 0 3px #BAB598;
+}
+.menu-left .divider {
+    margin-left:-6px;
+    margin-right:-6px;
+    padding:0;
+    position:absolute;
+    width:100%;
+    height:12px;
+    background:url(http://hastypudding.org/assets/images/divider-sidebar.png) center center no-repeat;
+}
+.widget.menu-left {
+    display:block;
+}
+.widget {
+    background:#fffdf2;
+    border:1px solid #e9e3d3;
+}
+.menu-left img#crest-sm {
+    width:100%;
+    height:auto;
+    padding:15px;
+}
+.menu-left ul {
+    margin:0;
+    padding:25px 0 0;
+}
+.menu-left ul li {
+    margin-left:-6px;
+    margin-right:-6px;
+    padding:0;
+    list-style:none;
+}
+.menu-left ul li a {
+    line-height:1.5em;
+    text-decoration:none;
+    padding:10px 25px;
+    width:100%;
+    display:block;
+    color:#121212;
+}
+.menu-left ul li a:hover {
+    background:#750a18;
+    color:#fff;
+}
+/* Body Wrap
+================================================= */
+.body_wrap {
+    width:100%;
+    float:left;
+    position:relative;
+    display:block;
+}
+a.icon {
+    opacity:1;
+    text-decoration:none;
+    display: block;
+}
+a.icon:hover {
+    opacity:.8;
+    text-decoration:none;
+}
+.widicon {
+    width:auto;
+    height:374px !important;
+    padding:0;
+    float:left;
+    position:relative;
+    margin:0 10px 10px 0;
+    display:block;
+    background:#fff;
+    border:15px solid #fff;
+}
+.widicon.one {
+    height: 379px;
+}
+.widicon h3, .widicon p, .widicon img {
+    color:#fff;
+    text-align:center;
+    margin:0 auto;
+}
+.give, .comps, .events, .woy, .buy_tickets, .membership, .follow, .newsletter, .watch {
+    background:#004986;
+    width:225px;
+    height:370px;
+    text-align: center;
+
+}
+.comps, .woy, .watch {
+    width:450px;
+    height:370px;
+}
+.give {
+    background:#004986;
+    text-align: center;
+}
+.give img {
+    margin-top:30px;
+}
+.give h3 {
+    font-size:72px;
+    margin:0;
+    padding:0;
+}
+.comps {
+    background:#004986;
+}
+.comps img {
+    width:420px !important;
+}
+.comps h3 {
+    margin:0;
+    padding-top:275px;
+    font-size:32px;
+    text-transform:none;
+    line-height:35px;
+}
+.comps h3 span {
+    font-size:35px;
+    text-transform:uppercase;
+}
+.events {
+    background:#004986;
+    text-align: center;
+    margin:0 auto;
+}
+.events h3 {
+    font-size:36px;
+}
+.events img {
+    height: 345px
+}
+.moywoy {
+    background:#004986;
+    margin-right:0;
+    border-right:none;
+    width:460px;
+}
+.moywoy p {
+    margin:0;
+    padding-top:310px;
+    text-transform:lowercase;
+    font-size:23px;
+}
+.moywoy img {
+    width: 446px !important;
+}
+.buy_tickets {
+    background:#004986;
+}
+.buy_tickets h3 {
+    text-indent:-99999px;
+}
+.buy_tickets img {
+    margin-top:25px;
+}
+.membership {
+    background:#004986;
+    text-align: center;
+}
+.membership h3 {
+    text-indent:-99999px;
+}
+.membership img {
+    height: 358px;
+}
+.follow {
+    background:none;
+}
+.follow h3 {
+    font-size:36px;
+}
+.grant {
+    background:#004986;
+    text-align: center;
+}
+.grant h3 {
+    font-size:36px;
+    text-transform:none;
+}
+.grant img {
+    height:345px;
+}
+.watch {
+    background:#004986;
+    text-align: center;
+    width:459px;
+}
+.watch h3 {
+    text-indent:-99999px;
+}
+.watch img {
+    height: 345px;
+}
+
+/* Right Column
+===================================================== */
+#right-column .wrap {
+    background:#fff;
+    box-shadow:0 0 3px #BAB598;
+    -moz-box-shadow:0 0 3px #BAB598;
+    -webkit-box-shadow:0 0 3px #BAB598;
+    width:100%;
+    border-radius: 5px;
+}
+#right-column img {
+    border-radius:5px;
+    width:100%;
+    height:auto;
+}
+img.wrap {
+    background:#fff;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    box-shadow:0 0 3px #BAB598;
+    -moz-box-shadow:0 0 3px #BAB598;
+    -webkit-box-shadow:0 0 3px #BAB598;
+    margin:15px 5px;
+    padding:6px;
+}
+
+/* Promo Section
+===================================================== */
+.promo-wrap {
+    width:100%;
+    margin:30px auto 0;
+    padding:25px 0;
+    background:#ffffff url(http://hastypudding.org/assets/images/bg/bg-promo.jpg) center center no-repeat;
+}
+.promo-wrap h3 {
+    font-size:34px;
+    font-family: 'NewsGothicStdBold';
+    color:#004986;
+    text-transform:none;
+    padding-top:20px;
+}
+.promo-wrap .btn {
+    font-size:26px;
+    font-family: 'NewsGothicStdBold';
+    margin-top:50px;
+}
+
+p.wrap a {display: block;position: relative; z-index:99;}
+/* Footer Top
+===================================================== */
+.foot-top-wrap {
+    background:#004279;
+    margin:0;
+    padding:0;
+    color:#fff;
+    line-height: 60px;
+}
+.foot-top-wrap p {
+    margin:0;
+    padding:0;
+    line-height:60px;
+    font-size:15px;
+}
+.box-bg a {
+    color:#fff;
+    padding:5px 10px;
+    line-height:1em;
+    text-decoration:none;
+    background:#003f73;
+    border-top:1px solid #00335d;
+    border-bottom:1px solid #00549a;
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+}
+.box-bg a:hover {
+    background:#00335d;
+}
+/* Social Media Icons
+===================================================== */
+
+ul.social-icons {
+    margin:0 auto;
+    padding:0;
+    line-height:60px;
+    display: inline-block;
+}
+ul.social-icons li {
+    display:block;
+    float:left;
+    margin:0 2px;
+    padding:0px;
+    width:37px;
+    height:35px;
+    background:url(http://hastypudding.org/assets/images/icons/social-icons.png) 0 -36px no-repeat;
+}
+ul.social-icons li a {
+    border:none;
+    text-indent:-9999px;
+    display:block;
+    line-height:0px;
+    width:37px;
+    height:35px;
+}
+ul.social-icons li.facebook-icon {
+    background-position: 0 -36px;
+}
+ul.social-icons li.facebook-icon:hover {
+    background-position: 0 0;
+}
+ul.social-icons li.twitter-icon {
+    background-position: -40px -36px;
+}
+ul.social-icons li.twitter-icon:hover {
+    background-position: -40px 0;
+}
+ul.social-icons li.googleplus-icon {
+    background-position: -80px -36px;
+}
+ul.social-icons li.googleplus-icon:hover {
+    background-position: -80px 0;
+}
+ul.social-icons li.youtube-icon {
+    background-position: -120px -36px;
+}
+ul.social-icons li.youtube-icon:hover {
+    background-position: -120px 0;
+}
+ul.social-icons li.instagram-icon {
+    background-position: -160px -36px;
+}
+ul.social-icons li.instagram-icon:hover {
+    background-position: -160px 0;
+}
+/* Social Media Icons - Maroon
+===================================================== */
+
+ul.social-icons-maroon {
+    margin:20px auto;
+    padding:0;
+    line-height:60px;
+    float:none;
+    text-align: center;
+}
+ul.social-icons-maroon li {
+    display: inline-block;
+    margin:0 2px;
+    padding:0px;
+    width:37px;
+    height:35px;
+    background:url(http://hastypudding.org/assets/images/social-icons-maroon.png) 0 -36px no-repeat;
+}
+ul.social-icons-maroon li a {
+    border:none;
+    text-indent:-9999px;
+    display:block;
+    line-height:0px;
+    width:37px;
+    height:35px;
+}
+ul.social-icons-maroon li.facebook-icon {
+    background-position: 0 -36px;
+}
+ul.social-icons-maroon li.facebook-icon:hover {
+    background-position: 0 0;
+}
+ul.social-icons-maroon li.twitter-icon {
+    background-position: -40px -36px;
+}
+ul.social-icons-maroon li.twitter-icon:hover {
+    background-position: -40px 0;
+}
+ul.social-icons-maroon li.googleplus-icon {
+    background-position: -80px -36px;
+}
+ul.social-icons-maroon li.googleplus-icon:hover {
+    background-position: -80px 0;
+}
+ul.social-icons-maroon li.youtube-icon {
+    background-position: -120px -36px;
+}
+ul.social-icons-maroon li.youtube-icon:hover {
+    background-position: -120px 0;
+}
+ul.social-icons-maroon li.instagram-icon {
+    background-position: -160px -36px;
+}
+ul.social-icons-maroon li.instagram-icon:hover {
+    background-position: -160px 0;
+}
+/* Social Media Icons - Blue
+===================================================== */
+
+ul.social-icons-blue {
+    margin:20px auto;
+    padding:0;
+    line-height:60px;
+    float:none;
+    text-align: center;
+}
+ul.social-icons-blue li {
+    display: inline-block;
+    margin:0 2px;
+    padding:0px;
+    width:37px;
+    height:35px;
+    background:url(http://hastypudding.org/assets/images/social-icons-blue.png) 0 -36px no-repeat;
+}
+ul.social-icons-blue li a {
+    border:none;
+    text-indent:-9999px;
+    display:block;
+    line-height:0px;
+    width:37px;
+    height:35px;
+}
+ul.social-icons-blue li.facebook-icon {
+    background-position: 0 -36px;
+}
+ul.social-icons-blue li.facebook-icon:hover {
+    background-position: 0 0;
+}
+ul.social-icons-blue li.twitter-icon {
+    background-position: -40px -36px;
+}
+ul.social-icons-blue li.twitter-icon:hover {
+    background-position: -40px 0;
+}
+ul.social-icons-blue li.googleplus-icon {
+    background-position: -80px -36px;
+}
+ul.social-icons-blue li.googleplus-icon:hover {
+    background-position: -80px 0;
+}
+ul.social-icons-blue li.youtube-icon {
+    background-position: -120px -36px;
+}
+ul.social-icons-blue li.youtube-icon:hover {
+    background-position: -120px 0;
+}
+ul.social-icons-blue li.instagram-icon {
+    background-position: -160px -36px;
+}
+ul.social-icons-blue li.instagram-icon:hover {
+    background-position: -160px 0;
+}
+
+/* Social Media Icons - White
+===================================================== */
+
+.white ul.social-icons {
+    margin:20px auto;
+    padding:0;
+    line-height:60px;
+    float:none;
+    text-align: center;
+}
+.white ul.social-icons li {
+    display: inline-block;
+    margin:0 2px;
+    padding:0px;
+    width:37px;
+    height:35px;
+    background:url(http://hastypudding.org/assets/images/social-icons-white.png) 0 -36px no-repeat;
+}
+.white ul.social-icons li a {
+    border:none;
+    text-indent:-9999px;
+    display:block;
+    line-height:0px;
+    width:37px;
+    height:35px;
+}
+.white ul.social-icons li.facebook-icon {
+    background-position: 0 -36px;
+}
+.white ul.social-icons li.facebook-icon:hover {
+    background-position: 0 0;
+}
+.white ul.social-icons li.twitter-icon {
+    background-position: -40px -36px;
+}
+.white ul.social-icons li.twitter-icon:hover {
+    background-position: -40px 0;
+}
+.white ul.social-icons li.googleplus-icon {
+    background-position: -80px -36px;
+}
+.white ul.social-icons li.googleplus-icon:hover {
+    background-position: -80px 0;
+}
+.white ul.social-icons li.youtube-icon {
+    background-position: -120px -36px;
+}
+.white ul.social-icons li.youtube-icon:hover {
+    background-position: -120px 0;
+}
+.white ul.social-icons li.instagram-icon {
+    background-position: -160px -36px;
+}
+.white ul.social-icons li.instagram-icon:hover {
+    background-position: -160px 0;
+}
+/* Blog Styles - General
+=================================================== */
+ul.blog { padding:0; margin:0;}
+ul.blog li {
+	background:#fff;
+	border:1px solid #ececd7;
+	border-radius: 6px;
+	padding: 5px 25px;
+	margin:15px 0;
+	list-style:none;
+}
+ul.blog li .btn {
+	float:right;
+}
+.border{
+	background:#fff;
+	border:1px solid #ececd7;
+	border-radius: 6px;
+	padding: 5px 15px;
+	margin:15px 0;
+}
+.nav-previous {
+text-align:left;
+
+}
+.nav-next {
+text-align:right;
+}
+.back_to_main {
+	text-align:right;
+}
+
+/* Footer
+=================================================== */
+.footer-wrap {
+    background:url(http://hastypudding.org/assets/images/bg/bg_f.jpg) center center repeat;
+    margin:0;
+    padding:0 0 15px;
+    border-top:1px solid #363f3c;
+}
+.foot-wrapper {
+    border-top:1px solid #010302;
+}
+.foot-wrapper a, .foot-wrapper p {
+    color:#eaeaee;
+}
+.crest {
+    background:url(http://hastypudding.org/assets/images/bg/crest-l.jpg) center center no-repeat;
+    padding: 25px 0 0;
+}
+p.design-by {
+    margin:0;
+    padding:0;
+    line-height:3em;
+}
+.foot-nav {
+    margin:0;
+    padding:0;
+}
+.foot-nav li {
+    color: #FFFFFF;
+    list-style:none;
+    margin:0;
+    padding:5px 0;
+}
+ul.foot-nav li {
+    text-transform:uppercase;
+    font-weight:bold;
+    letter-spacing:-.3px;
+}
+ul.foot-nav li.heading {
+    text-transform:uppercase;
+    font-family: 'NewsGothicStdBold';
+    letter-spacing: normal;
+    height:80px;
+    border-bottom:2px solid #d4d4d8;
+    margin-bottom:10px;
+    font-weight: normal;
+}
+ul.foot-nav li.heading a {
+    color:#d4d4d8;
+    font-size:22px;
+}
+ul.foot-nav li li {
+    text-transform:none;
+    font-weight:normal;
+    letter-spacing:normal;
+}
+ul.foot-nav ul {
+    margin:0;
+    padding:0;
+}
+.foot-nav li a {
+    font-size:15px;
+}
+li.red-foot a {
+    color:#c11732;
+}
+.color-purple {
+    color:#581015;
+}
+.color-yellow {
+    color:#ebb700;
+}
+.color-blue {
+    color:#004986;
+}
+.color-green {
+    color:#006643;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .org_wrp h4 {
+        font-size:13px;
+        letter-spacing:-.3px;
+    }
+    .org_wrp p.st_height {
+        min-height:240px;
+    }
+    /* Left Nav
+    ================================================= */
+    .menu-left img#crest-sm {
+        padding:10px;
+    }
+    .left-col-wrap {
+        float: left;
+        margin: 0 10px 0 0;
+        position: relative;
+        width: 152px;
+    }
+    .menu-left ul li a {
+        line-height:1.5em;
+        text-decoration:none;
+        padding:10px 0 10px 10px;
+        width:100%;
+        display:block;
+        color:#121212;
+    }
+    /* Body Wrap
+    ================================================= */
+    .body_wrap {
+        width:100%;
+        float:left;
+        position:relative;
+        display:block;
+    }
+    a.icon {
+        opacity:1;
+        text-decoration:none;
+    }
+    a.icon:hover {
+        opacity:.8;
+        text-decoration:none;
+    }
+    #left-sidebar {
+        display: none;
+    }
+    /********************************************************************************************/
+    .foot-top-wrap p {
+        font-size:14px;
+    }
+    ul.foot-nav li.heading {
+        text-transform:uppercase;
+        font-family: 'NewsGothicStdBold';
+        letter-spacing: normal;
+        //min-height:70px;
+        border-bottom:2px solid #d4d4d8;
+        margin-bottom:10px;
+        font-size:18px;
+    }
+    ul.foot-nav li.heading a {
+        color:#d4d4d8;
+        font-size:19px;
+    }
+    .foot-nav li a {
+        font-size:14px;
+    }
+
+    /* Social Icons drop down
+    ============================================= */
+    ul.social-t ul:after {
+        left:162px;
+    }
+    ul.social-t ul {
+    }
+}
+
+/* Colors for Different Club pages
+================================================================================================= */
+/* Hasty Pudding Institute
+--------------------------------------------------------------- */
+.hpi .menu-left ul li a:hover {
+    background:#8a1c2c;
+}
+.hpi h1,
+.hpi h2,
+.hpi h3,
+.hpi h4 {
+    color:#8a1c2c;
+}
+.hpi .foot-top-wrap {
+    background: none repeat scroll 0 0 #8a1c2c;
+}
+.hpi .box-bg a {
+    color: #FFFFFF;
+    line-height: 1em;
+    padding: 5px 10px;
+    background: none repeat scroll 0 0 #751321;
+    border-bottom: 1px solid #A7293B;
+    border-radius: 5px 5px 5px 5px;
+    border-top: 1px solid #540E18;
+}
+.hpi .box-bg a:hover {
+    background:#540E18;
+}
+.hpi .btn-promo-foot {
+    color: #ffffff;
+    background-color: #9f0f25;
+    border-color: #581015;
+}
+.hpi .btn-promo-foot:hover, .hpi .btn-promo-foot:focus, .hpi .btn-promo-foot:active, .hpi .btn-promo-foot.active, .hpi .open .dropdown-toggle.btn-promo-foot {
+    color: #ffffff;
+    background-color: #8A1C2C;
+    border-color: #581015;
+}
+.hpi .btn-promo-foot:active, .hpi .btn-promo-foot.active,.hpi .open .dropdown-toggle.btn-promo-foot {
+    background-image: none;
+}
+/* Hasty Pudding Theatricals
+--------------------------------------------------------------- */
+.hpt .navbar-wrapper {
+    background:#004986 url(http://hastypudding.org/assets/images/hpt-logo.png) center 7px no-repeat;
+    border-top:1px solid #015397;
+    border-bottom:1px solid #013e70;
+}
+.hpt .sticky .navbar-wrapper  {
+    background:#004986;
+    border-top:1px solid #015397;
+    border-bottom:1px solid #013e70;
+}
+.hpt .navbar-wrap {
+    border-top:1px solid #004986;
+    border-bottom:2px solid #004986;
+}
+.nav-contact h3 a {
+	display: inline-block !important;
+	padding: 12px 20px 10px 20px !important;
+	border-radius: 5px !important;
+}
+.hpt .nav-give a, .nav3 .nav-contact h3 a {
+    background: none repeat scroll 0 0 #003f73;
+    border-top: 1px solid #003663;
+    border-bottom: 1px solid #015397;
+}
+.hpt .nav-give a:hover, .hpt .nav-give a:focus, .nav3 .nav-contact h3 a:hover, .nav3 .nav-contact h3 a:focus {
+    background:#003663;
+    color: #efeac4;
+}
+.hpt .sticky .nav-give a, .sticky .nav3 .nav-contact h3 a {
+    background: none repeat scroll 0 0 #003f73;
+    border-top: 1px solid #003663;
+    border-bottom: 1px solid #015397;
+}
+.hpt .sticky .nav-give a:hover, .hpt .sticky .nav-give a:focus, .sticky .nav3 .nav-contact h3 a:hover, .sticky .nav3 .nav-contact h3 a:focus {
+    background:#003663;
+}
+.hpt .menu-left ul li a:hover, .hpc .menu-left ul li a:hover{
+    background:#004986;
+}
+.hpt h1, .hpc h1,
+.hpt h2, .hpc h2,
+.hpt h3, .hpc h3,
+.hpt h4, .hpc h4 {
+    color:#004986;
+}
+
+.hpt .btn-blue, .hpc .btn-blue {
+    color: #ffffff;
+    background-color: #004986;
+    border-color: #142533;
+}
+.hpt .btn-promo-foot:hover, .hpt .btn-promo-foot:focus, .hpt .btn-promo-foot:active,
+.hpt .btn-promo-foot.active, .hpt .open .dropdown-toggle.btn-promo-foot,
+.hpc .btn-promo-foot:hover, .hpc .btn-promo-foot:focus, .hpc .btn-promo-foot:active,
+.hpc .btn-promo-foot.active, .hpc .open .dropdown-toggle.btn-promo-foot {
+    color: #ffffff;
+    background-color: #013c6e;
+    border-color: #142533;
+}
+.hpc .btn-promo-foot:active, .hpc .btn-promo-foot.active, .hpc .open .dropdown-toggle.btn-promo-foot,
+.hpc .btn-promo-foot:active, .hpc .btn-promo-foot.active, .hpc .open .dropdown-toggle.btn-promo-foot{
+    background-image: none;
+}
+
+/* Hasty Pudding Theatricals
+--------------------------------------------------------------- */
+.hpc .navbar-wrapper {
+    background:#eceac9 url(http://hastypudding.org/assets/images/hpc-logo.png) center 3px no-repeat;
+    border-top:1px solid #e1dfb6;
+    border-bottom:1px solid #e1dfb6;
+}
+.hpc .sticky .navbar-wrapper  {
+    background:#eceac9;
+    border-top:1px solid #e1dfb6;
+    border-bottom:1px solid #e1dfb6;
+}
+.hpc .navbar-wrap {
+    border-top:1px solid #eceac9;
+    border-bottom:2px solid #eceac9;
+}
+.hpc .nav-give a, .nav2 .nav-contact h3 a {
+    background: none repeat scroll 0 0 #e1dfb6;
+    border-top: 1px solid #cecb9d;
+    border-bottom: 1px solid #fcfbe2;
+}
+.hpc .nav-give a:hover, .nav-give a:focus, .nav2 .nav-contact h3 a:hover, .nav2 .nav-contact h3 a:focus {
+    background:#d4d2a2;
+}
+.hpc .sticky .nav-give a, .sticky .nav2 .nav-contact h3 a {
+    background: none repeat scroll 0 0 #e1dfb6;
+    border-top: 1px solid #cecb9d;
+    border-bottom: 1px solid #fcfbe2;
+}
+.hpc .sticky .nav-give a:hover, .nav-give a:focus, .sticky .nav2 .nav-contact h3 a:hover, .sticky .nav2 .nav-contact h3 a:focus {
+    background:#d4d2a2;
+}
+
+
+
+.past-prod li {
+    list-style: none;
+}
+.capitalize {
+    text-transform:capitalize;
+    font-weight: normal;
+}
+
+ul.none {
+    margin:0;
+    padding:0;
+}
+ul.none li {
+    margin:0;
+    padding:20px 0;
+    list-style:none;
+}
+
+/* Gallery ****************************/
+ul.gallery {margin:0; padding:0;}
+ul.gallery li{ list-style:none; float:left; display:block; margin:0; padding:6px;}
+ul.gallery li:fist-child{ list-style:none; float:left; display:block; margin:0; padding:6px 6px 6px 0;}
+ul.gallery li:nth-child(4){ list-style:none; float:left; display:block; margin:0; padding:6px 0 6px 6px;}
+
+
+/* ---- Custome Responsive Styles ------------------
+------------------------------------------------------
+---------------------------------------------------- */
+
+@media (max-width: 768px) {
+    ul.foot-nav li.heading a {
+        font-size:16px;
+    }
+
+.comps, .woy, .watch {
+    height: 270px;
+    width: 300px;
+}
+	.comps {
+		height: 257px !important;
+
+	}
+	.moywoy {
+		border-right:15px solid #fff;
+		width:300px;
+		height:239px !important;
+		margin-top:10px;
+	}
+	.watch {
+	height: 257px !important;
+    width: 300px;
+}
+.watch img {
+    height: auto !important;
+}
+#scroll-down { display:none; }
+
+}
+@media (max-width: 992px) {
+    ul.foot-nav li.heading a {
+        font-size:16px;
+    }
+
+}
+@media (max-width: 1200px) {
+    ul.foot-nav li.heading a {
+        font-size:18px;
+    }
+
+}
+
+
+
+@media (min-width: 768px) {
+    .col-sm-7 {
+        width: 57.333%;
+    }
+}
+@media (min-width: 992px) {
+    #left-sidebar.col-lg-2 {
+        width: 17.667%;
+    }
+    .col-md-8 {
+        width: 65.667%;
+    }
+    .col-md-10{
+        width: 82.333%;
+    }
+    .col-md-7 {
+        width: 57.333%;
+    }
+    .col-lg-8 {
+        width: 65.667%;
+    }
+    .col-lg-10 {
+        width: 82.333%;
+    }
+    .col-lg-7 {
+        width: 57.333%;
+    }
+}
+@media (min-width: 1200px) {
+
+    #left-sidebar.col-lg-2 {
+        width: 17.667%;
+    }
+    .col-lg-8 {
+        width: 65.667%;
+    }
+    .col-lg-10 {
+        width: 82.333%;
+    }
+    .col-lg-7 {
+        width: 57.333%;
+    }
+}
+
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.embed-responsive-16by9 {
+    padding-bottom: 56.25%;
+}
+
+iframe {max-width: 100%; min-height: 450px;height: auto;}
+
+/* Buy Tickets Page */
+
+.clear {clear: both;}
+
+h2.toc_links a {color: #0c4d87;line-height: 44px; display: inline-block;}
+
+.newwhitebox {
+	padding: 15px;
+	background: #fff;
+    box-shadow: 0 0 3px #BAB598;
+    -moz-box-shadow: 0 0 3px #BAB598;
+    -webkit-box-shadow: 0 0 3px #BAB598;
+    margin: 20px 5px;
+    max-width: 700px;
+    font: 16px 'Open Sans';
+    position: relative;
+}
+.newwhitebox p {padding: 10px 0; line-height: 29px;}
+.newwhitebox h3 {
+	font-size: 30px;
+}
+.newwhitebox h4, .newwhitebox strong {
+	font-size: 18px;
+}
+
+.newwhitebox .moywoy_img_buy {
+	float: left; 
+	margin: 0 25px 0 0;
+}
+
+.newwhitebox a {position: relative; z-index: 9999;}
+button.new_buy_btn {
+	color: white;
+	font: 18px 'NewsGothicStdMedium';
+	background: #3f8bca;
+	border-radius: 25px;
+	border: none;
+	appearance: none;
+	-webkit-appearance: none;
+	outline: none;
+	padding: 10px 25px;
+	text-align: center;
+	min-width: 240px;
+	position: absolute;
+	bottom: 30px;
+}
+
+a.buy_btn {
+	color: white;
+	font: 18px 'NewsGothicStdMedium';
+	background: #3f8bca;
+	border-radius: 25px;
+	border: none;
+	appearance: none;
+	-webkit-appearance: none;
+	outline: none;
+	padding: 10px 25px;
+	text-align: center;
+	min-width: 240px;
+	margin-top: 10px;
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+}
+a.buy_btn:hover {opacity: .8;}
+
+button.buy_btn a, button.new_buy_btn a {color: white !important;}
+button.buy_btn a:hover, button.new_buy_btn a:hover {color: white !important;}
+
+@media all and (max-width: 1199px) {
+	button.bermuda_btn {
+		position: absolute;
+		bottom: 30px;
+	}
+}
+@media all and (min-width: 767px) and (max-width: 1199px) {
+	.newwhitebox {min-height: 500px;}
+}
+@media all and (max-width: 767px) {
+	.newwhitebox {min-height: 440px;}
+	.newwhitebox .moywoy_img_buy {display: none;}
+}
+
+
+.redBtnDonate {
+	appearance: none;
+	-webkit-appearance: none;
+	outline: none;
+	border: 1px solid #b11708;
+	border-radius: 5px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b11708+0,7c180d+100 */
+	background: #b11708; /* Old browsers */
+	background: -moz-linear-gradient(top,  #b11708 0%, #7c180d 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #b11708 0%,#7c180d 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #b11708 0%,#7c180d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b11708', endColorstr='#7c180d',GradientType=0 ); /* IE6-9 */
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-transform: uppercase;	
+}
+.redBtnDonate:hover {color: #eee; text-decoration: none;}
+
+.newBuyBtn {
+    color: white;
+    font: 18px 'NewsGothicStdMedium';
+    background: #3f8bca;
+    border-radius: 25px;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    padding: 10px 25px;
+    text-align: center;
+    min-width: 240px;
+    margin-top: 10px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.newBuyBtn:hover {
+    opacity: .8;
+    color: white;
+}
+
+.sidebarNewBtn {
+    min-width: 100%;
+}
+
+.ui-accordion-content .col-sm-12 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: .98em;
+}
+
+.tocNew a {
+    color: white;
+    font: 18px 'NewsGothicStdMedium';
+    background: #3f8bca;
+    border-radius: 25px;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    padding: 10px 25px;
+    text-align: center;
+    min-width: 240px;
+    margin-top: 10px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+
+    line-height: normal !important;
+    color: white !important;
+    min-width: 127px;
+}
+
+.tocNew a.red-tix {background: #c11732;}
+
+.tocNew a:hover {
+    opacity: .8;
+    color: white;
+}
+
+.nav3 .newButton {
+    color: white;
+    font: 18px 'NewsGothicStdMedium';
+    background: #3f8bca;
+    border-radius: 25px;
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    padding: 10px 25px;
+    text-align: center;
+    min-width: 100%;
+    margin-top: 10px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 0 !important;
+}
+
+.nav3 .newButton:hover {
+    opacity: .8;
+    color: white !important;
+    background: #3f8bca !important;
+}
+

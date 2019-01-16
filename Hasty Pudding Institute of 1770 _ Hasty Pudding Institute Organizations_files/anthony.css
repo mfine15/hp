@@ -1,0 +1,212 @@
+.red-text{
+    color: #8a1c2c;
+}
+
+/**
+* ********************************
+* Lunch
+* ********************************
+*/
+
+.lunch-signup-header{
+    margin-bottom: 20px;
+}
+
+.lunch-menu-inner{
+    background: #fff;
+    border: 1px solid #e9e3d3;
+    padding: 2em;
+}
+
+.lunch-menu-container .menu-header{
+    text-align: center;
+}
+
+.lunch-menu-container .sep{
+    width: 70%;
+    margin-left: 15%;
+}
+
+.lunch-menu-container h2{
+    margin-bottom: 9px;
+}
+
+.lunch-signup-submit{}
+
+.lunch-date-desc{
+    margin:18px 0 0 0;
+}
+
+.checkbox input[type=checkbox] {
+    float: none;
+    margin-left: 39px;
+}
+
+.checkbox input[type=checkbox]:first-child{
+    margin-left: 0;
+}
+
+.checkbox{
+    margin-top: 24px;
+    background: #fff;
+    border: 1px solid #e9e3d3;
+    padding: 1em;
+}
+
+.input-label-container{
+    display: block;
+    margin-right: 24px;
+}
+
+.lunch-sep{
+    margin: 0 .5em;
+}
+
+.lunch-hr{
+    margin: 13px 0 11px 0;
+}
+
+/**
+ * **********************************************
+ * General Styling
+ * **********************************************
+ */
+
+.white-box{
+    background: #fff;
+    border: 1px solid #e9e3d3;
+    padding: 5px;
+}
+
+.white-box.error{
+    background: #9f0f25;
+    color: #fff;
+}
+
+.white-box.error a{
+    color: white;
+    font-weight: bold;
+    text-align: underline;
+}
+
+.white-box-inner{
+    padding: 10px;
+    /*background: url(../images/bg/bg_w.jpg);*/
+}
+
+.member-dashboard-message{
+    margin-bottom: 1em;
+}
+
+/**
+ * **********************************************
+ * Member Styling
+ * **********************************************
+ */
+#leftcolumn{
+    margin-top: 15px;
+}
+#middlecolumn{
+    padding: 14px;
+}
+
+.member-left-sidebar h4:first-child{
+    margin-top: 0;
+}
+
+.member-left-sidebar-container, #leftcolumn{
+    padding-left: 0;
+}
+.member-left-sidebar ul, #leftcolumn ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.member-left-sidebar ul li, #leftcolumn ul li{
+    padding: 3px 0;
+}
+
+.member-left-sidebar ul li:first-child, #leftcolumn ul li:first-child{
+    padding-top: 0;
+}
+
+.update-profile-container label{
+    display: block;
+}
+
+.update-profile-container select{
+    margin-bottom: 14px;
+}
+
+#profile-email a{ color: #004986;}
+
+/**
+ * *******************************************
+ * Register Form Styling
+ * *******************************************
+ */
+#alumni-section{
+    display: none;
+}
+
+.alumni-groups label{
+    display: block;
+}
+
+.alumni-groups label input{
+    margin-left: 14px;
+}
+
+.alumni-group-question{
+    margin-top: 1em;
+}
+
+/**
+ * *******************************************
+ * Member Listing
+ * *******************************************
+ */
+
+.member-listing{
+    list-style-type: none;
+    padding: 0;
+}
+.member-listing li{
+    display: block;
+    height: 47px;
+    line-height: 37px;
+    background: #fff;
+    border: 1px solid #e9e3d3;
+    padding: 5px;
+}
+
+.member-listing small{
+    padding-right: 5px;
+}
+
+.view-event-info-button{
+    display: inline;
+    font-weight: bold;
+}
+
+/**
+ * *******************************************
+ * Member Listing
+ * *******************************************
+ */
+
+#middlecolumn h2{
+    margin-bottom: 16px;
+}
+
+ .membrr-dashboard-form{}
+
+ .membrr-dashboard-form ul{
+    padding: 0;
+    list-style-type: none;
+ }
+
+  .membrr-dashboard-form label{
+    color: #000;
+  }

@@ -1,0 +1,426 @@
+nav {
+	text-align:center;
+}
+nav ul {
+	margin: 0px auto;
+	padding:0;
+	width:100%;
+	display:inline;
+}
+nav ul li {
+	width:auto;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 0;
+}
+nav li a, nav li a:visited {
+	display: block;
+	z-index: 510;
+	padding: 10px 20px;
+	font-family: 'NewsGothicStdBold';
+	text-transform:uppercase;
+	font-size: 14px;
+	color: #fff;
+	opacity:1;
+	text-shadow: 0 0 1px rgba(0,0,0,.35);
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	transition: all .3s ease;
+}
+ul#nav li ul li > a {
+    margin-left: 20px;
+}
+nav li a:hover, nav li a:active {
+	display: block;
+	text-decoration: none;
+	color: #efeac4;
+}
+.hpc #nav > li > a, .hpc #nav > li > a:visited {
+    color: #004986;
+}
+.hpc #nav > li > a:hover {
+    color: #fff;
+}
+nav li span {
+	position: absolute;
+	width: 10px;
+	height: 4px;
+	right: 15px;
+	top: 20px;
+}
+ul li .menu-frame {
+	padding: 0;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	display: none;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transiton: opacity 0.2s;
+	-moz-transition: opacity 0.2s;
+	-ms-transition: opacity 0.2s;
+	-o-transition: opacity 0.2s;
+	-transition: opacity 0.2s;
+}
+ul li:hover .menu-frame {
+	display:block;
+	opacity: 1;
+	visibility:visible;
+	-webkit-transiton: opacity 0.2s;
+	-moz-transition: opacity 0.2s;
+	-ms-transition: opacity 0.2s;
+	-o-transition: opacity 0.2s;
+	-transition: opacity 0.2s;
+}
+/* nav1 ***********************************/
+.nav1 .menu-frame {
+	background: rgb(117,21,30);
+	background: -moz-linear-gradient(top, rgba(117,21,30,1) 0%, rgba(128,21,33,1) 12%, rgba(128,21,33,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(117,21,30,1)), color-stop(12%, rgba(128,21,33,1)), color-stop(100%, rgba(128,21,33,1)));
+	background: -webkit-linear-gradient(top, rgba(117,21,30,1) 0%, rgba(128,21,33,1) 12%, rgba(128,21,33,1) 100%);
+	background: -o-linear-gradient(top, rgba(117,21,30,1) 0%, rgba(128,21,33,1) 12%, rgba(128,21,33,1) 100%);
+	background: -ms-linear-gradient(top, rgba(117,21,30,1) 0%, rgba(128,21,33,1) 12%, rgba(128,21,33,1) 100%);
+	background: linear-gradient(to bottom, rgba(117,21,30,1) 0%, rgba(128,21,33,1) 12%, rgba(128,21,33,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#75151e', endColorstr='#801521', GradientType=0 );
+}
+.nav1:hover {
+	background:	#75151E;
+}
+.nav1:hover a {
+	color:#ede8c4;
+}
+.nav1 a.link01:hover {
+	color:#d62b40;
+}
+.nav1 .menu-frame a:hover, .nav1 .menu-frame a:active {
+	color: #d62b40;
+}
+/* nav2 ***********************************/
+.nav2 .menu-frame {
+	background: rgb(224,219,192);
+	background: -moz-linear-gradient(top, rgba(224,219,192,1) 0%, rgba(235,230,200,1) 12%, rgba(235,230,200,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(224,219,192,1)), color-stop(12%, rgba(235,230,200,1)), color-stop(100%, rgba(235,230,200,1)));
+	background: -webkit-linear-gradient(top, rgba(224,219,192,1) 0%, rgba(235,230,200,1) 12%, rgba(235,230,200,1) 100%);
+	background: -o-linear-gradient(top, rgba(224,219,192,1) 0%, rgba(235,230,200,1) 12%, rgba(235,230,200,1) 100%);
+	background: -ms-linear-gradient(top, rgba(224,219,192,1) 0%, rgba(235,230,200,1) 12%, rgba(235,230,200,1) 100%);
+	background: linear-gradient(to bottom, rgba(224,219,192,1) 0%, rgba(235,230,200,1) 12%, rgba(235,230,200,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0dbc0', endColorstr='#ebe6c8', GradientType=0 );
+	color:#004986;
+}
+.nav2 .menu-frame a {
+	color:#004986;
+}
+.nav2:hover {
+	background: #E0DBC0;
+	color:#004986;
+}
+.nav2:hover a {
+	color:#004986;
+}
+.nav2 a.link02:hover {
+	color:#008afe;
+}
+.nav2 .menu-frame a:hover, .nav2 .menu-frame a:active {
+	color: #008afe;
+}
+/* nav3 ***********************************/
+.nav3 .menu-frame {
+	background: rgb(0,61,112);
+	background: -moz-linear-gradient(top, rgba(0,61,112,1) 0%, rgba(0,73,134,1) 12%, rgba(0,73,134,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,61,112,1)), color-stop(12%, rgba(0,73,134,1)), color-stop(100%, rgba(0,73,134,1)));
+	background: -webkit-linear-gradient(top, rgba(0,61,112,1) 0%, rgba(0,73,134,1) 12%, rgba(0,73,134,1) 100%);
+	background: -o-linear-gradient(top, rgba(0,61,112,1) 0%, rgba(0,73,134,1) 12%, rgba(0,73,134,1) 100%);
+	background: -ms-linear-gradient(top, rgba(0,61,112,1) 0%, rgba(0,73,134,1) 12%, rgba(0,73,134,1) 100%);
+	background: linear-gradient(to bottom, rgba(0,61,112,1) 0%, rgba(0,73,134,1) 12%, rgba(0,73,134,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003d70', endColorstr='#004986', GradientType=0 );
+}
+.nav3:hover {
+	background:	#003D70;
+}
+.nav3:hover a {
+	color:#ede8c4;
+}
+.nav3 a.link03:hover {
+	color:#008afe;
+}
+.nav3 .menu-frame a:hover, .nav3 .menu-frame a:active {
+	color: #008afe;
+}
+/* nav4 ***********************************/
+.nav4 .menu-frame {
+	background: rgb(0,91,59);
+	background: -moz-linear-gradient(top, rgba(0,91,59,1) 0%, rgba(0,102,67,1) 12%, rgba(0,102,67,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,91,59,1)), color-stop(12%, rgba(0,102,67,1)), color-stop(100%, rgba(0,102,67,1)));
+	background: -webkit-linear-gradient(top, rgba(0,91,59,1) 0%, rgba(0,102,67,1) 12%, rgba(0,102,67,1) 100%);
+	background: -o-linear-gradient(top, rgba(0,91,59,1) 0%, rgba(0,102,67,1) 12%, rgba(0,102,67,1) 100%);
+	background: -ms-linear-gradient(top, rgba(0,91,59,1) 0%, rgba(0,102,67,1) 12%, rgba(0,102,67,1) 100%);
+	background: linear-gradient(to bottom, rgba(0,91,59,1) 0%, rgba(0,102,67,1) 12%, rgba(0,102,67,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005b3b', endColorstr='#006643', GradientType=0 );
+}
+.nav4:hover {
+	background:	#005B3B;
+}
+.nav4:hover a {
+	color:#ede8c4;
+}
+.nav4 a.link04:hover {
+	color:#01fea7;
+}
+.nav4 .menu-frame a:hover, .nav4 .menu-frame a:active {
+	color: #01fea7;
+}
+/* nav5 ***********************************/
+.nav5 .menu-frame {
+	background: rgb(226,174,2);
+	background: -moz-linear-gradient(top, rgba(226,174,2,1) 0%, rgba(235,183,0,1) 12%, rgba(235,183,0,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(226,174,2,1)), color-stop(12%, rgba(235,183,0,1)), color-stop(100%, rgba(235,183,0,1)));
+	background: -webkit-linear-gradient(top, rgba(226,174,2,1) 0%, rgba(235,183,0,1) 12%, rgba(235,183,0,1) 100%);
+	background: -o-linear-gradient(top, rgba(226,174,2,1) 0%, rgba(235,183,0,1) 12%, rgba(235,183,0,1) 100%);
+	background: -ms-linear-gradient(top, rgba(226,174,2,1) 0%, rgba(235,183,0,1) 12%, rgba(235,183,0,1) 100%);
+	background: linear-gradient(to bottom, rgba(226,174,2,1) 0%, rgba(235,183,0,1) 12%, rgba(235,183,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2ae02', endColorstr='#ebb700', GradientType=0 );
+}
+.nav5:hover {
+	background:	#E2AE02;
+}
+.nav5:hover a {
+	color:#ede8c4;
+}
+.nav5 a.link05:hover {
+	color:#fddc69;
+}
+.nav5 .menu-frame a:hover, .nav5 .menu-frame a:active {
+	color: #fddc69;
+}
+/* 
+*************************************************************************************************************
+*/
+.menu-frame a {
+	text-transform:none;
+	font-weight:normal;
+	text-align:left;
+}
+.menu-frame h3 a {
+	text-transform:uppercase;
+	margin:0;
+	padding:0;
+	font-size:18px;
+	line-height:1.1em;
+}
+nav li .menu-frame section {
+	padding: 5px 25px 5px;
+	width: 25%;
+	float:left;
+}
+nav li.nav5 .menu-frame section {
+	float:right;
+}
+nav li .menu-frame section ul {
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+nav li .menu-frame ul.last {
+	border-left: 1px solid #e6e6e6;
+	margin-left: -50px;
+	padding-left: 49px;
+}
+nav li .menu-frame li {
+	list-style: none;
+	margin: 5px 0 20px;
+	display: block;
+	text-align:left;
+}
+nav li .menu-frame li.last {
+	margin-top: 30px;
+	font-weight: 800;
+}
+nav li .menu-frame li strong {
+	color: #6b6b6b;
+	font-weight: 800;
+}
+.menu-frame a {
+	color: #efeac4;
+	background: none;
+	padding: 0;
+	line-height:16px;
+}
+.menu-frame a:hover, .menu-frame a:active {
+	color: #333;
+	text-decoration: none;
+	background: none;
+}
+.nav-give a, .nav1 .nav-contact h3 a {
+	background: none repeat scroll 0 0 #751321;
+	border-top: 1px solid #540e18;
+	border-bottom: 1px solid #A7293B;
+	border-radius: 5px;
+	padding:10px 20px;
+}
+
+/*====================================================================== */
+
+/* Small menu */
+.menu-toggle {
+	cursor: pointer;
+}
+h1.menu-toggle {color:#fff; margin:0 0 0 10px;}
+.main-small-navigation .menu {
+	display: none;
+}
+.main-small-navigation .menu {
+	margin: 0;
+	padding: 0;
+}
+.main-small-navigation .menu li {
+	list-style: none;
+	margin: 0;
+	padding: 0
+}
+.main-small-navigation .menu li a {
+	margin: 2px;
+	padding: 10px;
+	background: #001522;
+	display: block;
+	width: 100%;
+	color: #fff;
+	text-decoration: none;
+}
+.main-small-navigation .menu li li a {
+	background: #999;
+}
+.main-small-navigation .menu li li li a {
+	background: #aaa;
+}
+.main-small-navigation .menu li a:hover {
+	background: #ccc;
+	transition: width 1s ease 0s, height 1s ease 0s, background-color 1s ease 0s, transform 1s ease 0s;
+	-moz-transition: width 1s ease 0s, height 1s ease 0s, background-color 1s ease 0s, transform 1s ease 0s;
+	-webkit-transition: width 1s ease 0s, height 1s ease 0s, background-color 1s ease 0s, transform 1s ease 0s;
+}
+
+
+
+/* Nav Sticky
+============================================================== */
+.sticky {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 9999999;
+	border-top: 0;
+}
+.sticky .menu-frame h3 a {
+	text-transform:uppercase;
+	margin:0;
+	padding:0;
+	font-size:18px;
+}
+.sticky .navbar-wrapper {
+	background:	#8A1C2C;
+	padding:0;
+}
+.sticky > .navbar-wrapper {
+	opacity:.94;
+}
+.sticky nav li a, .sticky nav li a:visited {
+	font-size:13px;
+	line-height:40px;
+}
+.sticky nav li .menu-frame a, .sticky nav li .menu-frame a:visited {
+	line-height:16px;
+}
+.nav-logo {
+	display:none;
+}
+.sticky .nav-logo {
+	display:block;
+	float:left;
+	width:120px;
+	height:40px;
+	padding:0px 30px;
+}
+.sticky nav {
+	float:left;
+}
+.sticky .nav-give a {
+	background: none repeat scroll 0 0 #751321;
+	border-top: 1px solid #540e18;
+	border-bottom: 1px solid #A7293B;
+	border-radius: 5px 5px 5px 5px;
+	padding:0px 20px;
+}
+.sticky nav > li a, .sticky nav > li a:visited {
+	padding: 6px 20px;
+}
+
+.sticky nav li.nav-give a, .sticky nav li.nav-give a:visited {
+	line-height:30px;
+}
+.sticky .nav-give a:hover, .sticky .nav-give a:focus {
+	background:#540e18;
+}
+.navbar-collapse ul.social-t {
+	display:none;
+}
+.sticky ul.social-t {
+	display:block;
+	border:none;
+}
+.sticky ul.social-t li {
+	border:none;
+	padding:0 5px;
+	line-height:40px;
+}
+.sticky ul.social-t li a {
+	line-height:52px;
+}
+.sticky nav {
+	text-align:left;
+}
+@media (max-width: 768px) {
+.sticky {
+    position: relative;
+}
+
+
+}
+/*----------------------------------------------------- */
+ @media (min-width: 992px) and (max-width: 1199px) {
+/* Mega Nav
+====================================================== */
+nav li a, nav li a:visited {
+	font-size:13px;
+	padding: 5px 10px;
+}
+/* Nav Sticky
+====================================================== */
+.sticky nav li a, .sticky nav li a:visited {
+	font-size:12px;
+	padding-left:5px;
+	padding-right:5px;
+	line-height:40px;
+}
+.sticky .nav-give a {
+	padding:0px 10px;
+}
+.sticky nav li .menu-frame a, .sticky nav li .menu-frame a:visited {
+	line-height:16px;
+}
+.sticky .menu-frame h3 a {
+	text-transform:uppercase;
+	margin:0;
+	padding:0;
+	font-size:16px;
+	line-height:1.1em;
+}
+}
